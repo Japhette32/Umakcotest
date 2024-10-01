@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umakco</title>
+    <link rel="icon" type="image/png" href="UmakcoAssets/UmakcoLogo.png" />
+    <link rel="stylesheet" href="styleumak.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="Main">
+        <nav class="nav">
+            <div class="logo">
+                <img src="UmakcoAssets/UmakcoLogo.png">
+                <h2>Univesity Of Makati Classroom Organizer</h2>
+                <h2 id="currentpage">Home</h2>
+            </div>
+
+            <div class="user">
+                <h2>Welcome,Musa!</h2>
+                <img src="UmakcoAssets/Usericon.png">
+            </div>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="hamburger-menu" class="hidden-menu">
+                <h2>Umak-Co</h2>
+                <div class="line"></div>
+                <ul>
+                    <li><a href="Homepage.html"><img src="UmakcoAssets/Homeicon.png">Home</a></li>
+                    <li><a href="Classroom.html"><img src="UmakcoAssets/Classroomicon.png">Classroom</a></li>
+                    <li><a href="Discussion.html"><img src="UmakcoAssets/Discussionicon.png">Discussion</a></li>
+                    <li><a href="CampusMap.html"><img src="UmakcoAssets/Mapsicon.png">Campus Map</a></li>
+                    <li><a href="Polls.html"><img src="UmakcoAssets/Pollsicon.png">Polls</a></li>
+                    <li><a href="Review.html"><img src="UmakcoAssets/Reviewicon.png">Review</a></li>
+
+                </ul>
+            </div>
+            <script>
+                function toggleMenu() {
+                    const menu = document.getElementById('hamburger-menu');
+                    if (menu.classList.contains('show-menu')) {
+                        menu.style.opacity = '0'; 
+                        setTimeout(() => {
+                            menu.classList.remove('show-menu'); 
+                        }, 500); 
+                    } else {
+                        menu.classList.add('show-menu');
+                        setTimeout(() => {
+                            menu.style.opacity = '1'; 
+                        }, 10); 
+                    }
+                }
+            </script>
+        </nav>
+          
+</body>
+
+</html>

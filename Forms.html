@@ -1,0 +1,61 @@
+<!--Forms -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body style="background-color: rgb(27, 184, 196);">
+    
+    <h1>Make your Account</h1>
+    <form action="index.php" method="POST" enctype="multipart/form-data">
+     <label for="Username">Username:</label>
+        <input type="text" id="Username" minlength="6" maxlength="13" required placeholder="NhedJhyro">
+        <br>
+        <label for="pass">Password:</label>
+        <input id="pass" type="password"  placeholder="NhedJyhro123" required>
+        <br>
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="NhedJhyro23@email.com" required>
+        <br>
+        <label for="bday">Birthday:</label>
+        <input id="bday" type="date" required>
+        <br>
+        <label for="phone">Telephone Number:</label>
+        <input id="phone" type="tel" name="phone" placeholder="1234 567 8900" pattern="[0-9]{4} [0-9]{3} [0-9]{4}" required>
+        <br>
+        <label for="quantity">Quantity:</label>
+        <input id="quantity" type="number" required>
+        <br>
+        <label for="sex">Sex:</label>
+        <label for="male">Male</label>
+        <input id="male" type="radio">
+        <label for="female">Female</label>
+        <input id="female" type="radio">
+        <br>
+        <label for="student">Are you a student?:</label>
+        <input id="student" type="checkbox">
+        <br>
+        <label>Payment:</label>
+        <select>
+            <Option value="G-cash">G-cash</Option>
+            <Option value="Cash">Cash</Option>
+            <Option value="Paymaya">Paymaya</Option>
+        </select>
+        <br>
+        <label for="student">Are you a student?:</label>
+        <input id="student" type="checkbox"> 
+        <br>
+       <label for="comment">Comment</label>
+       <textarea id="comment" row=34 cols=23 placeholder="Type Comment Here"></textarea>
+       <br>
+       <label for="file">Add a file</label>
+       <input id="file" type="file" accept="image/png, image/jpeg"></input>
+       <br>
+       <input type="reset"> <br>
+        
+        <input type="submit">
+    </form>
+</body>
+</html>
